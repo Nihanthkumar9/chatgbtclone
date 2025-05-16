@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChatGPT Clone Side-by-Side with Dark Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <button onclick="newChat()" class="new-chat">+ New Chat</button>
+  <button onclick="showChatHistory()" class="show-chat">📄 Show Chat History</button>
+  <button onclick="toggleDarkMode()" class="dark-mode">🌓 Toggle Dark</button>
+
+  <div class="main-wrapper">
+    <div class="chat-container">
+      <div class="chat-header">ChatGPT Clone</div>
+      <div class="chat-body" id="chatBody">
+        <!-- Chat messages -->
+      </div>
+      <div class="chat-input">
+        <input type="text" id="questionInput" placeholder="Ask a question..." />
+        <button onclick="askGemini()">Send</button>
+      </div>
+    </div>
+
+    <div id="chatHistoryDisplay" class="chat-history" style="display:none;"></div>
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>
